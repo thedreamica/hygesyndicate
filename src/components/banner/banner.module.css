@@ -1,0 +1,62 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 200px 100px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 400;
+  width: 50%;
+}
+
+.subHeading {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.headHighLight {
+  color: #6ba6ff;
+}
+
+.button {
+  height: 48px;
+  width: 180px;
+  border-radius: 8px;
+  background-color: #044ab3;
+  outline: none;
+  border: none;
+  padding: 0 34px;
+}
+
+.carouselWrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.image {
+  object-fit: none;
+  object-position: bottom;
+}
+
+@media (min-width: 420px) {
+  .heading {
+    font-size: 46px;
+    margin-bottom: 24px;
+  }
+  .subHeading {
+    font-size: 16px;
+    margin-bottom: 48px;
+    width: 50%;
+  }
+}

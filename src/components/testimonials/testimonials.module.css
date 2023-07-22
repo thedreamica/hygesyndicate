@@ -1,0 +1,56 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  padding: 0 16px;
+}
+
+.subHeading {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.itemContent {
+    color: #331B3B;
+font-size: 12px;
+font-weight: 400;
+}
+
+.itemName {
+    color: #000;
+font-size: 12px;
+font-weight: 600;
+}
+
+.sliderWrapper {
+    width: 100%;
+}
+
+.item {
+    width: 100%;
+}
+
+@media (min-width: 430px) {
+  .container {
+    padding: 0 100px;
+    background: url("/images/testimonial.png"), #ffffff;
+  }
+
+  .subHeading {
+    width: 50%;
+  }
+
+  .item {
+    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+    width: 500px;
+  }
+
+  .itemContent {
+    font-size: 16px;
+  }
+
+  .itemName {
+    font-size: 16px; 
+  }
+}

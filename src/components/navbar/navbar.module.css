@@ -1,0 +1,37 @@
+.navContainer {
+  width: 100vw;
+  display: flex;
+  padding: 0 100px;
+  position: fixed;
+}
+
+.logo {
+  width: 120px;
+}
+
+.navLinks {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.subNav {
+  display: none;
+}
+
+@media (min-width: 420px) {
+  .navContainer {
+    justify-content: space-between;
+  }
+  .logo {
+    width: 160px;
+  }
+  .subNav {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+  .navLinks {
+    cursor: pointer;
+  }
+}

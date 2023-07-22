@@ -1,0 +1,20 @@
+.heading {
+  color: #000;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.underline {
+    position: absolute;
+    bottom: 2px;
+}
+
+@media (min-width: 420px) {
+  .heading {
+    font-size: 40px;
+  }
+}
