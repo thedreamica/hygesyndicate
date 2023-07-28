@@ -1,44 +1,63 @@
 .container {
   width: 100vw;
-  height: 100vh;
-  padding: 0 16px;
+  /* height: 100vh; */
+  padding: 0 100px;
 }
 
 .subHeading {
   color: rgba(0, 0, 0, 0.6);
   font-size: 16px;
   font-weight: 400;
-  line-height: 32px;
+  line-height: 2em;
+  width: 58em;
 }
 
 .itemContent {
-    color: #331B3B;
-font-size: 12px;
-font-weight: 400;
+  color: #331B3B;
+  font-size: 12px;
+  font-weight: 400;
 }
 
 .itemName {
-    color: #000;
-font-size: 12px;
-font-weight: 600;
+  color: #000;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .sliderWrapper {
-    width: 100%;
+  width: auto;
+  background: #FFF;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+  padding: 2em 1.7em;
+}
+
+.slick-slide {
+  margin: 0 10px;
 }
 
 .item {
-    width: 100%;
+  width: 100%;
 }
 
-@media (min-width: 430px) {
+.testIcon {
+  display: flex;
+  gap: .3em;
+}
+
+.arrowPrev {
+  color: aqua;
+  background-color: red;
+}
+
+@media (max-width: 600px) {
   .container {
-    padding: 0 100px;
+    padding: 1em 1.5em;
     background: url("/images/testimonial.png"), #ffffff;
   }
 
   .subHeading {
-    width: 50%;
+    width: 100%;
+    font-size: 14px;
   }
 
   .item {
@@ -51,6 +70,6 @@ font-weight: 600;
   }
 
   .itemName {
-    font-size: 16px; 
+    font-size: 16px;
   }
 }
