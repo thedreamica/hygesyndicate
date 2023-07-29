@@ -1,7 +1,7 @@
 .commitmentWrapper {
   display: flex;
   flex-direction: column;
-  padding: 60px 16px;
+  padding: 2em 1.5em;
   width: 100vw;
   background-color: #ffffff;
 }
@@ -49,18 +49,33 @@
 
 .contentData {
   color: rgba(0, 0, 0, 0.60);
-font-size: 16px;
-font-weight: 400;
-line-height: 32px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-top: 1em;
 }
 
 .learnMore {
   color: #3461FF;
-font-size: 18px;
-font-style: normal;
-font-weight: 600;
-line-height: 24px;
-text-decoration-line: underline;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  text-decoration-line: underline;
+}
+
+.learnWrapper {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5em;
+  margin-top: 1em;
+}
+
+.upIcon {
+  color: blue;
+  width: 1em;
+  height: 1em;
 }
 
 @media (min-width: 430px) {
@@ -84,5 +99,9 @@ text-decoration-line: underline;
     font-size: 40px;
     font-weight: 600;
     line-height: normal;
+  }
+
+  .contentData {
+    font-size: 16px;
   }
 }

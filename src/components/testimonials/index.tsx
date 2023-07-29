@@ -41,6 +41,8 @@ function SampleNextArrow(props: any) {
 const Testimonials = () => {
   const settings = {
     infinite: true,
+    centerMode: true,
+    centerPadding: "60px",
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,

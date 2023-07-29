@@ -1,37 +1,79 @@
 .navContainer {
   width: 100vw;
   display: flex;
-  padding: 0 100px;
+  padding: .5em 1.3em;
   position: fixed;
+  justify-content: space-between;
+  z-index: 1;
 }
 
 .logo {
-  width: 120px;
+  width: 100px;
 }
 
 .navLinks {
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
+  margin: 1em 0;
 }
 
 .subNav {
-  display: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 7em;
+  gap: .5em;
+  background-color: black;
+}
+
+.subNavContact {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 20em;
+  background-color: black;
+}
+
+.menuWrapper {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: block;
+}
+
+.menu {
+  width: 1.7em;
+  height: 1.7em;
 }
 
 @media (min-width: 420px) {
   .navContainer {
     justify-content: space-between;
+    padding: .5em 100px;
   }
+
   .logo {
     width: 160px;
   }
-  .subNav {
+
+  .subNav,
+  .subNavContact {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 28px;
+    position: initial;
+    top: 0;
+    background-color: transparent;
   }
+
   .navLinks {
-    cursor: pointer;
+    font-size: 16px;
+  }
+
+  .menuWrapper {
+    display: none;
   }
 }

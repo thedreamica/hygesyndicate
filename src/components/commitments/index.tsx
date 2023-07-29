@@ -1,5 +1,4 @@
-import { Content } from "next/font/google";
-import styles from "./commitments.module.css"
+import styles from "./commitments.module.css";
 import Up from "@/icons/up";
 import Heading from "../common/heading";
 
@@ -21,7 +20,7 @@ const Commitments = () => {
         <Item metric="24+" text="Lorem ipsum dolor sit amet" />
       </div>
       <div className={styles.contentWrapper}>
-      <Heading text="Commitments" />
+        <Heading text="Commitments" />
         <p className={styles.contentData}>
           At Hyge Syndicate, we envision being a beacon of excellence and
           innovation. We aim to create meaningful experiences for our customers
@@ -30,10 +29,10 @@ const Commitments = () => {
           coding services.
         </p>
         <div>
-        <p className={styles.learnMore}>
-          Learn more 
-        </p>
-        <Up fill="#3461ff" />
+          <div className={styles.learnWrapper}>
+            <p className={styles.learnMore}>Learn more</p>
+            <Up fill="#3461FF" className={styles.upIcon} />
+          </div>
         </div>
       </div>
     </div>

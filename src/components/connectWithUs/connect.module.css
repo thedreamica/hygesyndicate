@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: #FFF;
+    position: relative;
 }
 
 .title {
@@ -47,12 +48,11 @@
     font-size: 1em;
     border-radius: 4px;
     border: 1px solid rgba(0, 0, 0, 0.18) !important;
-    padding: 1.1em 1.5em;
+    padding: 0 1.5em;
     color: rgba(0, 0, 0, 0.31);
     background-color: transparent;
     width: 100%;
-    height: 15vh;
-    line-height: 15em;
+    height: 25vh;
 }
 
 .button {
@@ -68,9 +68,45 @@
     margin: 1.2em auto;
 }
 
+.Circle,
+.plusLeft,
+.plusRight,
+.CircleBottom {
+    position: absolute;
+}
+
+.Circle {
+    top: -5em;
+    transform: rotate(180deg);
+    right: -8em;
+    width: 30em;
+    height: 30em;
+}
+
+.plusLeft {
+    top: 5em;
+    left: 0;
+    width: 10em;
+    height: 10em;
+}
+
+.plusRight {
+    bottom: 0;
+    right: 0;
+    width: 10em;
+    height: 10em;
+}
+
+.CircleBottom {
+    bottom: -15em;
+    left: -3em;
+    width: 30em;
+    height: 30em;
+}
+
 @media (max-width: 600px) {
     .container {
-        padding: 1em 1.5em;
+        padding: 6em 1.5em;
     }
 
     .heading {
@@ -96,4 +132,37 @@
         padding: .3em 2em;
         margin: 1em auto;
     }
+
+    .message {
+        height: 20vh;
+    }
+
+    .Circle {
+        top: -5em;
+        right: -15em;
+        width: 20em;
+        height: 20em;
+    }
+
+    .plusLeft {
+        top: 0;
+        left: -3em;
+        width: 8em;
+        height: 8em;
+    }
+
+    .plusRight {
+        bottom: 0;
+        right: -2em;
+        width: 8em;
+        height: 8em;
+    }
+
+    .CircleBottom {
+        bottom: -15em;
+        left: -3em;
+        width: 20em;
+        height: 20em;
+    }
+
 }

@@ -5,16 +5,21 @@
 }
 
 .wrapper {
-    position: relative;
+  position: relative;
 }
 
 .underline {
-    position: absolute;
-    bottom: 2px;
+  position: absolute;
+  bottom: 2px;
+  width: fit-content;
 }
 
 @media (min-width: 420px) {
   .heading {
     font-size: 40px;
+  }
+
+  .underline {
+    width: auto;
   }
 }

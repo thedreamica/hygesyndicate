@@ -24,10 +24,12 @@ const Banner = () => {
       </p>
       <button className={styles.button}>
         Contact us &nbsp;
-        <Up />
+        <Up fill="#fff" />
       </button>
       <div className={styles.carouselWrapper}>
         <Slider {...settings}>
+          <img className={styles.image} src="/images/bannerImage.png" />
+          <img className={styles.image} src="/images/bannerImage.png" />
           <img className={styles.image} src="/images/bannerImage.png" />
         </Slider>
       </div>

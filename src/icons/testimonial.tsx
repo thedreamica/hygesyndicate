@@ -1,4 +1,4 @@
-const Testimonial = ({...props}) => {
+const Testimonial = ({ ...props }) => {
   return (
     <svg
       width="24"
@@ -16,4 +16,4 @@ const Testimonial = ({...props}) => {
   );
 };
 
-export default Testimonial
+export default Testimonial;

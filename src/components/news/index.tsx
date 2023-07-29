@@ -7,7 +7,7 @@ const Item = ({ img, heading, content }: any) => {
       <img className={styles.image} src={img} />
       <div className={styles.headDiv}>
         <p className={styles.heading}>{heading}</p>
-        <Up className={styles.upIcon} />
+        <Up fill="#FDC221" className={styles.upIcon} />
       </div>
       <p className={styles.para}>{content}</p>
     </div>
