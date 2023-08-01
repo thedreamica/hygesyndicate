@@ -78,10 +78,10 @@
 
 .Circle {
     top: -5em;
-    transform: rotate(180deg);
-    right: -8em;
-    width: 30em;
-    height: 30em;
+    transform: rotate(200deg);
+    right: -30em;
+    width: 40em;
+    height: 40em;
 }
 
 .plusLeft {

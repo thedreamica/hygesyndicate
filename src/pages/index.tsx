@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import styles from '@/styles/Home.module.css'
 import NavBar from '@/components/navbar'
 import Banner from '@/components/banner'
 import Commitments from '@/components/commitments'

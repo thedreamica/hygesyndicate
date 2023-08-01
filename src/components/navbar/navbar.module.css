@@ -11,7 +11,8 @@
   width: 100px;
 }
 
-.navLinks {
+.navLinks,
+.MobnavLinks {
   color: #fff;
   font-size: 14px;
   font-weight: 500;
@@ -23,13 +24,16 @@
   display: flex;
   flex-direction: column;
   position: absolute;
-  top: 7em;
+  top: 4.5em;
   gap: .5em;
   background-color: black;
+  width: 100%;
+  left: 0;
+  padding: 4em 2em;
 }
 
 .subNavContact {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: absolute;
   top: 20em;
@@ -67,6 +71,8 @@
     position: initial;
     top: 0;
     background-color: transparent;
+    width: auto;
+    padding: 0;
   }
 
   .navLinks {
@@ -74,6 +80,10 @@
   }
 
   .menuWrapper {
+    display: none;
+  }
+
+  .MobnavLinks {
     display: none;
   }
 }

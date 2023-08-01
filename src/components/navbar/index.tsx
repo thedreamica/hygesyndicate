@@ -1,9 +1,10 @@
-import FaceBook from "@/icons/facebook";
+import { useEffect, useState } from "react";
 import styles from "./navbar.module.css";
+import Menu from "@/icons/menu";
+
+import FaceBook from "@/icons/facebook";
 import LinkedIn from "@/icons/linkedin";
 import Instagram from "@/icons/instagram";
-import Menu from "@/icons/menu";
-import { useEffect, useState } from "react";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -32,6 +33,8 @@ const NavBar = () => {
           <p className={styles.navLinks}>Who we are</p>
           <p className={styles.navLinks}>Our Business</p>
           <p className={styles.navLinks}>Reviews</p>
+          <p className={styles.MobnavLinks}>News & Media</p>
+          <p className={styles.MobnavLinks}>Contact us</p>
         </div>
       )}
       <div>
@@ -40,15 +43,13 @@ const NavBar = () => {
       <button onClick={handleNav} className={styles.menuWrapper}>
         <Menu fill="white" className={styles.menu} />
       </button>
-      {(showNav || !isMobile) && (
-        <div className={styles.subNavContact}>
-          <p className={styles.navLinks}>News & Media</p>
-          <p className={styles.navLinks}>Contact us</p>
-          <FaceBook />
-          <LinkedIn />
-          <Instagram />
-        </div>
-      )}
+      <div className={styles.subNavContact}>
+        <p className={styles.navLinks}>News & Media</p>
+        <p className={styles.navLinks}>Contact us</p>
+        <FaceBook />
+        <LinkedIn />
+        <Instagram />
+      </div>
     </div>
   );
 };

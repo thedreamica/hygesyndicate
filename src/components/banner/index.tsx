@@ -1,7 +1,9 @@
-import Up from "@/icons/up";
 import styles from "./banner.module.css";
 
 import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import Up from "@/icons/up";
 
 const Banner = () => {
   const settings = {
@@ -10,6 +12,8 @@ const Banner = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    arrows: true,
+    autoplay: true,
   };
   return (
     <div className={styles.container}>
@@ -29,8 +33,9 @@ const Banner = () => {
       <div className={styles.carouselWrapper}>
         <Slider {...settings}>
           <img className={styles.image} src="/images/bannerImage.png" />
+          <img className={styles.image} src="/images/banner2.png" />
           <img className={styles.image} src="/images/bannerImage.png" />
-          <img className={styles.image} src="/images/bannerImage.png" />
+          <img className={styles.image} src="/images/banner2.png" />
         </Slider>
       </div>
     </div>

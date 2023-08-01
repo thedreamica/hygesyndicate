@@ -5,6 +5,8 @@ import Testimonial from "@/icons/testimonial";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import ArrowRight from "@/icons/ArrowRight";
+import ArrowLeft from "@/icons/ArrowLeft";
 
 const Item = ({ content, name }: any) => {
   return (
@@ -18,36 +20,36 @@ const Item = ({ content, name }: any) => {
     </div>
   );
 };
-function SamplePrevArrow(props: any) {
-  const { className, style, onClick } = props;
+
+const NextArrow = (props: any) => {
+  const { style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "green" }}
-      onClick={onClick}
-    />
+    <div style={{ ...style, }} onClick={onClick}>
+      <ArrowRight className={styles.nextStyles} />
+    </div>
   );
-}
-function SampleNextArrow(props: any) {
-  const { className, style, onClick } = props;
+};
+
+const PrevArrow = (props: any) => {
+  const { style, onClick } = props;
   return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", background: "red" }}
-      onClick={onClick}
-    />
+    <div style={{ ...style }} onClick={onClick}>
+      <ArrowLeft className={styles.prevStyles} />
+    </div>
   );
-}
+};
+
 const Testimonials = () => {
   const settings = {
-    infinite: true,
+    className: "center", // Add a custom class to handle centering in CSS
     centerMode: true,
-    centerPadding: "60px",
+    infinite: true,
+    centerPadding: "60px", // Adjust this value to control the spacing between items
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <SampleNextArrow />,
-    prevArrow: <SamplePrevArrow />,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
     dots: true,
     responsive: [
       {
