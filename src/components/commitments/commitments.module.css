@@ -10,14 +10,14 @@
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  gap: 10%;
+  gap: 5%;
 }
 
 .itemWrapper {
   display: flex;
   flex-direction: column;
   width: 40%;
-  margin-bottom: 6%;
+  margin-bottom: 10%;
 }
 
 .itemContent {

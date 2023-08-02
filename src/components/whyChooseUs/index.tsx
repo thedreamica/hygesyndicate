@@ -29,37 +29,39 @@ const WhyChooseUs = () => {
       <div className={styles.content}>
         <Heading text="Why choose us" />
         <p className={styles.subHeading}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua quis
-          nostrud exercitation
+          We are best in business for all your multiple business ventures from
+          medical coding to travel and investment. We proudly provide the best
+          services across 11+ industries.
         </p>
-        <div>
-          <img src="/images/bg-chooseUs.png" alt="chooseUs" />
-        </div>
+        <img
+          className={styles.imageStyles}
+          src="/images/bg-chooseUs.jpg"
+          alt="chooseUs"
+        />
       </div>
       <div className={styles.offering}>
         <Item
-          label="Versatility and Adaptability"
+          label="Dynamic Adaptivity"
           icon={<Direction className={styles.icon} fill="#FFFFFF" />}
         />
         <Item
-          label="Wide Range of Services"
+          label="Multiple Services"
           icon={<Plus className={styles.icon} fill="#FFFFFF" />}
         />
         <Item
-          label="Shared Knowledge"
+          label="Well-Trained Experts"
           icon={<Book className={styles.icon} fill="#FFFFFF" />}
         />
         <Item
-          label="Synergistic Opportunities"
+          label="World-Class Opportunities"
           icon={<Bulb className={styles.icon} fill="#FFFFFF" />}
         />
         <Item
-          label="Simplified Management"
+          label="Smooth Management"
           icon={<UserGear className={styles.icon} fill="#FFFFFF" />}
         />
         <Item
-          label="Trust and Reliability"
+          label="Fully Reliable"
           icon={<HandShake className={styles.icon} fill="#FFFFFF" />}
         />
       </div>

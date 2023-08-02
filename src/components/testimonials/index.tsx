@@ -78,11 +78,10 @@ const Testimonials = () => {
 
   return (
     <div className={styles.container}>
-      <Heading text="Testimonials" />
+      <Heading text="Success Tales" />
       <p className={styles.subHeading}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua quis nostrud
-        exercitation
+        Listen to what our clients are saying about us. Join them by consuming
+        our services from multiple industries.
       </p>
       <div className={styles.sliderWrapper}>
         <Slider {...settings}>

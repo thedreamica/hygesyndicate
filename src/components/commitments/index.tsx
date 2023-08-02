@@ -14,10 +14,10 @@ const Commitments = () => {
   return (
     <div className={styles.commitmentWrapper}>
       <div className={styles.itemsWrapper}>
-        <Item metric="24%" text="Lorem ipsum dolor sit amet" />
-        <Item metric="13K+" text="Lorem ipsum dolor sit amet" />
-        <Item metric="50+" text="Lorem ipsum dolor sit amet" />
-        <Item metric="24+" text="Lorem ipsum dolor sit amet" />
+        <Item metric="11+" text="Industries Served" />
+        <Item metric="100%" text="Reliable Solutions" />
+        <Item metric="100%" text="Customer Support" />
+        <Item metric="15%+" text="Revenue Recovery" />
       </div>
       <div className={styles.contentWrapper}>
         <Heading text="Commitments" />
