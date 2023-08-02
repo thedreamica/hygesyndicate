@@ -47,32 +47,10 @@
 .arrowPrev {
   color: aqua;
   background-color: red;
-}
-
-.slick-center {
-  transform: scale(1.08);
-  /* Adjust this value to control the scaling effect */
-  transition: transform 0.3s ease-in-out;
-  /* Add a smooth transition effect */
-}
-
-/* Center mode styles */
-.slick-center .slick-slide {
-  opacity: 1;
-  /* Optional: Adjust the opacity of the center item */
-}
-
-.slick-slide {
-  transition: opacity 0.3s ease-in-out;
-  /* Optional: Add a smooth opacity transition */
-}
-
-/* Optional: Add styling to improve the appearance */
-.slick-slide h3 {
-  background: #fff;
-  padding: 20px;
-  margin: 0;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 0;
+  width: 10em;
+  height: 10em;
 }
 
 .nextStyles {
@@ -88,12 +66,11 @@
 
   .subHeading {
     width: 100%;
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .item {
-    box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
-    width: 500px;
+    width: 100%;
   }
 
   .itemContent {
@@ -107,5 +84,6 @@
   .sliderWrapper {
     width: 100%;
     padding: 1.5em 1em;
+    margin: 2em 0;
   }
 }

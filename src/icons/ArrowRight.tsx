@@ -10,6 +10,8 @@ const ArrowRight: React.FC<ArrowProps> = ({ className, ...props }) => {
       viewBox="0 0 25 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
+      className={className}
     >
       <path
         d="M-0.000116348 35.3088L15.2704 20.005L-0.000116348 4.70117L4.70106 0L24.7061 20.005L4.70106 40.01L-0.000116348 35.3088Z"

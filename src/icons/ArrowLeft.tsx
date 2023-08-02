@@ -10,6 +10,8 @@ interface ArrowProps {
       viewBox="0 0 25 41"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      {...props}
+      className={className}
     >
       <path
         d="M24.7062 35.3088L9.43569 20.005L24.7062 4.70117L20.005 0L0 20.005L20.005 40.01L24.7062 35.3088Z"

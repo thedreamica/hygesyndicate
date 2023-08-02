@@ -24,7 +24,16 @@ const Item = ({ content, name }: any) => {
 const NextArrow = (props: any) => {
   const { style, onClick } = props;
   return (
-    <div style={{ ...style, }} onClick={onClick}>
+    <div
+      style={{
+        ...style,
+        position: "absolute",
+        right: "0",
+        top: "6em",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    >
       <ArrowRight className={styles.nextStyles} />
     </div>
   );
@@ -33,7 +42,16 @@ const NextArrow = (props: any) => {
 const PrevArrow = (props: any) => {
   const { style, onClick } = props;
   return (
-    <div style={{ ...style }} onClick={onClick}>
+    <div
+      style={{
+        ...style,
+        position: "absolute",
+        left: "0",
+        top: "6em",
+        cursor: "pointer",
+      }}
+      onClick={onClick}
+    >
       <ArrowLeft className={styles.prevStyles} />
     </div>
   );
@@ -41,10 +59,7 @@ const PrevArrow = (props: any) => {
 
 const Testimonials = () => {
   const settings = {
-    className: "center", // Add a custom class to handle centering in CSS
-    centerMode: true,
     infinite: true,
-    centerPadding: "60px", // Adjust this value to control the spacing between items
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
