@@ -1,8 +1,4 @@
-interface ArrowProps {
-    className: string;
-  }
-  
-  const ArrowLeft: React.FC<ArrowProps> = ({ className, ...props }) => {
+const ArrowLeft = ({ ...props }) => {
   return (
     <svg
       width="25"
@@ -11,7 +7,6 @@ interface ArrowProps {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
-      className={className}
     >
       <path
         d="M24.7062 35.3088L9.43569 20.005L24.7062 4.70117L20.005 0L0 20.005L20.005 40.01L24.7062 35.3088Z"

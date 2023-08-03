@@ -27,8 +27,7 @@
 
 .sliderWrapper {
   width: 100%;
-  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
-  padding: 2em 1.7em;
+  margin-top: 2em;
 }
 
 .slick-slide {
@@ -36,7 +35,14 @@
 }
 
 .item {
-  width: 80%;
+  width: 90%;
+  box-shadow: 0px 0px 7px 1px rgba(0, 0, 0, 0.08);
+  padding: 2em;
+  height: 35vh;
+}
+
+.itemName {
+  font-size: 20px;
 }
 
 .testIcon {
@@ -44,24 +50,15 @@
   gap: .3em;
 }
 
-.arrowPrev {
-  color: aqua;
+.slick-prev,
+.slick-next {
   background-color: red;
-  position: absolute;
-  left: 0;
-  width: 10em;
-  height: 10em;
-}
-
-.nextStyles {
-  position: 'absolute';
-  right: 0;
+  width: 30vh;
 }
 
 @media (max-width: 600px) {
   .container {
     padding: 2em 1.5em;
-    background: url("/images/testimonial.png"), #ffffff;
   }
 
   .subHeading {
@@ -71,6 +68,9 @@
 
   .item {
     width: 100%;
+    margin: 0;
+    height: 100%;
+    padding: 5px;
   }
 
   .itemContent {
@@ -83,7 +83,7 @@
 
   .sliderWrapper {
     width: 100%;
-    padding: 1.5em 1em;
+    padding: 1.5em 0;
     margin: 2em 0;
   }
 }
