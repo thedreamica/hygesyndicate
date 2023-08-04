@@ -14,6 +14,7 @@
   align-items: center;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .image {
@@ -71,26 +72,28 @@
 .divWrapper {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
-.carouselItem,
-.carouselItem2,
-.carouselItem3,
-.carouselItem4,
-.carouselItem5,
-.carouselItem6,
-.carouselItem7,
-.carouselItem8,
-.carouselItem9,
-.carouselItem10,
-.carouselItem11,
-.carouselItem12,
-.carouselItem13,
-.carouselItem14 {
+.modalContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
+}
+
+.carouselItem {
+  background-image: url("/images/businessbackground.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90vh;
+  height: 100vh;
   width: 100%;
   padding: 0 100px;
   display: flex !important;
@@ -122,9 +125,10 @@
 
 .para {
   font-size: 16px;
+  margin-bottom: 2em;
 }
 
-.button {
+.ModalLink {
   background-color: transparent;
   border: none;
   text-decoration: underline;
@@ -132,64 +136,25 @@
   cursor: pointer;
   text-transform: capitalize;
   font-size: 1.1em;
-  margin-top: 3em;
-
 }
 
-.carouselItem {
-  background-image: url("/images/businessbackground.png");
+.modalContainer {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
 }
 
-.carouselItem2 {
-  background-image: url('https://i.postimg.cc/vZM8fRnz/business2.png');
+.modalContent {
+  width: 80%;
 }
 
-.carouselItem3 {
-  background-image: url('https://i.postimg.cc/FzJ8nKML/business3.png');
-}
-
-.carouselItem4 {
-  background-image: url('https://i.postimg.cc/gcC2cLk1/business4.png');
-}
-
-.carouselItem5 {
-  background-image: url('https://i.postimg.cc/xqDhr2QF/business5.png');
-}
-
-.carouselItem6 {
-  background-image: url('https://i.postimg.cc/MGpW3ydf/business6.png');
-}
-
-.carouselItem7 {
-  background-image: url('https://i.postimg.cc/Rhd4hr9d/business7.png');
-}
-
-.carouselItem8 {
-  background-image: url('https://i.postimg.cc/SxpF3WNN/business8.png');
-}
-
-.carouselItem9 {
-  background-image: url('https://i.postimg.cc/3J2JkrkN/business9.png');
-}
-
-.carouselItem10 {
-  background-image: url('https://i.postimg.cc/sXxt7mKK/business10.png');
-}
-
-.carouselItem11 {
-  background-image: url('https://i.postimg.cc/76RjVzW4/business11.png');
-}
-
-.carouselItem12 {
-  background-image: url('https://i.postimg.cc/rpZqBKPn/business12.png');
-}
-
-.carouselItem13 {
-  background-image: url('https://i.postimg.cc/gcX0PHdv/business13.png');
-}
-
-.carouselItem14 {
-  background-image: url('https://i.postimg.cc/jSXxh8Qr/business14.png');
+.ModalItem {
+  width: 100%;
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3em;
 }
 
 @media (max-width: 430px) {
@@ -226,24 +191,6 @@
     display: none;
   }
 
-  .carouselItem,
-  .carouselItem2,
-  .carouselItem3,
-  .carouselItem4,
-  .carouselItem5,
-  .carouselItem6,
-  .carouselItem7,
-  .carouselItem8,
-  .carouselItem9,
-  .carouselItem10,
-  .carouselItem11,
-  .carouselItem12,
-  .carouselItem13,
-  .carouselItem14 {
-    padding: 0 1.5em;
-    height: 100vh;
-  }
-
   .contentWrapper {
     width: 100%;
     padding: 1.3em;
@@ -261,8 +208,22 @@
   }
 
   .carouselTitle {
-    font-size: 2.5em;
+    font-size: 2.3em;
     font-weight: 900;
     margin: .5em 0;
+  }
+
+  .carouselItem {
+    padding: 2em 1.5em;
+  }
+
+  .ModalItem {
+    width: 100%;
+    height: auto;
+    padding: 2.5em 1em;
+  }
+
+  .ModalLink {
+    font-size: 1em;
   }
 }
