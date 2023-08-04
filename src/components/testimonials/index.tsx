@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import styles from "./testimonials.module.css";
 import Heading from "../common/heading";
 import Testimonial from "@/icons/testimonial";
@@ -7,9 +7,9 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import ArrowRight from "@/icons/ArrowRight";
-import ArrowLeft from "@/icons/ArrowLeft";
-import { useEffect, useState } from "react";
+// import ArrowRight from "@/icons/ArrowRight";
+// import ArrowLeft from "@/icons/ArrowLeft";
+// import { useEffect, useState } from "react";
 
 const Item = ({ content, name }: any) => {
   return (
@@ -24,40 +24,40 @@ const Item = ({ content, name }: any) => {
   );
 };
 
-const PrevArrow = (props: any) => {
-  const { style, onClick } = props;
-  return (
-    <div
-      style={{
-        ...style,
-        position: "absolute",
-        left: "0",
-        top: "8em",
-        cursor: "pointer",
-      }}
-      onClick={onClick}
-    >
-      <ArrowLeft />
-    </div>
-  );
-};
-const NextArrow = (props: any) => {
-  const { style, onClick } = props;
-  return (
-    <div
-      style={{
-        ...style,
-        position: "absolute",
-        right: "0",
-        top: "8em",
-        cursor: "pointer",
-      }}
-      onClick={onClick}
-    >
-      <ArrowRight />
-    </div>
-  );
-};
+// const PrevArrow = (props: any) => {
+//   const { style, onClick } = props;
+//   return (
+//     <div
+//       style={{
+//         ...style,
+//         position: "absolute",
+//         left: "0",
+//         top: "8em",
+//         cursor: "pointer",
+//       }}
+//       onClick={onClick}
+//     >
+//       <ArrowLeft />
+//     </div>
+//   );
+// };
+// const NextArrow = (props: any) => {
+//   const { style, onClick } = props;
+//   return (
+//     <div
+//       style={{
+//         ...style,
+//         position: "absolute",
+//         right: "0",
+//         top: "8em",
+//         cursor: "pointer",
+//       }}
+//       onClick={onClick}
+//     >
+//       <ArrowRight />
+//     </div>
+//   );
+// };
 
 // const CustomArrow = (props: any) => {
 //   const { className, onClick, icon } = props;
@@ -76,8 +76,8 @@ const Testimonials = () => {
     slidesToScroll: 1,
     // prevArrow: <CustomArrow className="slick-prev" icon={<ArrowLeft />} />,
     // nextArrow: <CustomArrow className="slick-next" icon={<ArrowRight />} />,
-    prevArrow: <PrevArrow />,
-    nextArrow: <NextArrow />,
+    // prevArrow: <PrevArrow />,
+    // nextArrow: <NextArrow />,
     dots: true,
     autoplay: true,
     responsive: [

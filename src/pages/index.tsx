@@ -13,7 +13,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <NavBar />
       <Banner />
       <Commitments />
@@ -23,6 +23,6 @@ export default function Home() {
       <News />
       <ConnectWithUs />
       <Footer />
-    </>
+    </div>
   );
 }

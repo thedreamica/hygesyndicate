@@ -214,8 +214,8 @@ const OurBusiness = () => {
           {/* contents */}
           <div className={styles.contentWrapper}>
             <p className={styles.para}>
-              Expand your brand's reach and conquer international markets with
-              our expert export solutions. We provide opportunities to
+              Expand your brand&apos;s reach and conquer international markets
+              with our expert export solutions. We provide opportunities to
               businesses to tap into the international market and provide
               increased opportunities.
             </p>
@@ -249,7 +249,7 @@ const OurBusiness = () => {
           {/* contents */}
           <div className={styles.contentWrapper}>
             <p className={styles.para}>
-              Travel more for less with our affordable bus fares that don't
+              Travel more for less with our affordable bus fares that don&apos;t
               compromise on quality or comfort. Experience reliable
               transportation with ample legroom, and advanced amenities.
             </p>
