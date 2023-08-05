@@ -1,6 +1,7 @@
 .container {
   width: 100vw;
   padding: 2em 100px;
+  position: relative;
 }
 
 .subHeading {
@@ -50,10 +51,14 @@
   gap: .3em;
 }
 
-.slick-prev,
-.slick-next {
-  background-color: red;
-  width: 30vh;
+
+.Circle {
+  position: absolute;
+  transform: rotate(90deg);
+  right: -30em;
+  z-index: -1;
+  width: 40em;
+  height: 40em;
 }
 
 @media (max-width: 600px) {
@@ -85,5 +90,11 @@
     width: 100%;
     padding: 1.5em 0;
     margin: 2em 0;
+  }
+
+  .Circle {
+    position: absolute;
+    transform: rotate(180deg);
+    left: 0;
   }
 }

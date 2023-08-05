@@ -109,7 +109,7 @@
   gap: 1em;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 450px) {
   .container {
     padding: 0;
     gap: 0;

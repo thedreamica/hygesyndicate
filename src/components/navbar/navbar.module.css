@@ -4,7 +4,7 @@
   padding: .5em 1.3em;
   position: fixed;
   justify-content: space-between;
-  z-index: 1;
+  z-index: 999;
 }
 
 .logo {
@@ -48,11 +48,16 @@
 }
 
 .menu {
-  width: 1.7em;
-  height: 1.7em;
+  width: 2.3em;
+  height: 2.3em;
 }
 
-@media (min-width: 420px) {
+.closeIcon {
+  width: 2.5em;
+  height: 2.5em;
+}
+
+@media (min-width: 450px) {
   .navContainer {
     justify-content: space-between;
     padding: .5em 100px;

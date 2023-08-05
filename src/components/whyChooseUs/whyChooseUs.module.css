@@ -82,7 +82,7 @@
   margin: 2em 0;
 }
 
-@media (min-width: 420px) {
+@media (min-width: 500px) {
   .container {
     padding: 10em 100px;
     flex-direction: row;

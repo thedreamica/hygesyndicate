@@ -5,6 +5,7 @@ import Menu from "@/icons/menu";
 import FaceBook from "@/icons/facebook";
 import LinkedIn from "@/icons/linkedin";
 import Instagram from "@/icons/instagram";
+import Close from "@/icons/Close";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -41,7 +42,11 @@ const NavBar = () => {
         <img className={styles.logo} src="/images/Logo.png" />
       </div>
       <button onClick={handleNav} className={styles.menuWrapper}>
-        <Menu fill="white" className={styles.menu} />
+        {showNav ? (
+          <Close fill="white" className={styles.closeIcon} />
+        ) : (
+          <Menu fill="white" className={styles.menu} />
+        )}
       </button>
       <div className={styles.subNavContact}>
         <p className={styles.navLinks}>News & Media</p>

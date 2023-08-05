@@ -28,7 +28,7 @@ const Footer = () => {
   const handleLinksBtn = () => {
     setLinks(!Links);
   };
-  
+
   const handleOfficeBtn = () => {
     setOffice(!office);
   };
@@ -44,7 +44,9 @@ const Footer = () => {
           <p className={styles.slogo}>
             Contribute Positively to the communities we serve
           </p>
-          <p className={styles.mail}>support@hygeinfotech.com</p>
+          <a href="mailto:support@hygesyndicate.com" className={styles.mail}>
+            support@hygesyndicate.com
+          </a>
           <p className={styles.terms}>Terms&conditions</p>
         </div>
         {/* office */}

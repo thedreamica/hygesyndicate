@@ -31,9 +31,9 @@ const OurBusiness = () => {
         <div className={styles.itemWrapper}>
           <Item
             onItemClick={handleItemClick}
-            itemId={1}
-            img="/images/paradise.png"
-            label="Hyge Paradise INN"
+            itemId={2}
+            img="/images/infotech.png"
+            label="Hyge Infotech"
           />
           <Item
             onItemClick={handleItemClick}
@@ -43,9 +43,9 @@ const OurBusiness = () => {
           />
           <Item
             onItemClick={handleItemClick}
-            itemId={2}
-            img="/images/infotech.png"
-            label="Hyge Infotech"
+            itemId={1}
+            img="/images/paradise.png"
+            label="Hyge Paradise INN"
           />
           <Item
             onItemClick={handleItemClick}

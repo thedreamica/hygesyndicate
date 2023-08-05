@@ -7,49 +7,49 @@ const modalData = [
     img: "https://i.postimg.cc/vZM8fRnz/business2.png",
     title: "Hyge Paradise INN",
     desc: "With the best location, get the opportunity to experience comfort and familiarity with Hyge Paradise In. Get indulged in local culture and lifestyle with home-like facilities.",
-    link: "",
+    link: "https://hygeparadiseinn.com",
   },
   {
     id: 2,
     img: "https://i.postimg.cc/FzJ8nKML/business3.png",
     title: "Hyge Infotech",
     desc: "Experience a seamless fusion of digital marketing with healthcare and IT service. Our holistic approach ensures the best service in healthcare IT, analytics, AI, and DevOps solution along with digital marketing.",
-    link: "",
+    link: "https://hygeinfotech.com",
   },
   {
     id: 3,
     img: "https://i.postimg.cc/gcC2cLk1/business4.png",
     title: "Hyge Royale",
     desc: "Our goal is to create an unforgettable experience for you. Enjoy your vacation by staying at our resorts with all luxury and comfort amenities.",
-    link: "",
+    link: "https://hygeroyale.com",
   },
   {
     id: 4,
     img: "https://i.postimg.cc/xqDhr2QF/business5.png",
     title: "Hyge Construction",
     desc: "Get the service of construction management from the beginning to the end with Hyge Construction. Our team is well-trained and professional in commercial as well as residential construction with remodeling.",
-    link: "",
+    link: "https://hygeconstruction.com",
   },
   {
     id: 5,
     img: "https://i.postimg.cc/MGpW3ydf/business6.png",
     title: "Hyge Clapper Board",
     desc: "Catering all your creative needs. We aim to convert your vision into action. Hyge Clapper Board offer creative service from documentary and short films to creating and making a campaign for your business.",
-    link: "",
+    link: "https://hygeclapperboard.com",
   },
   {
     id: 6,
     img: "https://i.postimg.cc/Rhd4hr9d/business7.png",
     title: "Hyge Finance",
     desc: "Trusted platform for all your loan requirements. Easy to understand and reliable loan services for your convenience. We also provide financial literacy to make the decision-making process easier for you.",
-    link: "",
+    link: "https://hygefinance.com",
   },
   {
     id: 7,
     img: "https://i.postimg.cc/SxpF3WNN/business8.png",
     title: "Hyge Rental",
     desc: "Hyge Rental provides all types of rental services in one place. Looking to rent a house, car, resort, or heavy vehicle? We have got all these at the best prices for you.",
-    link: "",
+    link: "https://hygerental.com",
   },
   {
     id: 8,
@@ -106,11 +106,7 @@ const Modal = ({ selectedItemId, onClose }: any) => {
   const { id, img, title, desc, link } = modalItem;
   return (
     <div onClick={handleClose} className={styles.modalContainer}>
-      <div
-        style={{ display: "flex", justifyContent: "center" }}
-        className={styles.modalContent}
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <div
           key={id}
           style={{
@@ -125,7 +121,7 @@ const Modal = ({ selectedItemId, onClose }: any) => {
           <p className={styles.carouselTitle}>{title}</p>
           <div className={styles.contentWrapper}>
             <p className={styles.para}>{desc}</p>
-            <a href={link} className={styles.ModalLink}>
+            <a target="blank" href={link} className={styles.ModalLink}>
               learn More
             </a>
           </div>
